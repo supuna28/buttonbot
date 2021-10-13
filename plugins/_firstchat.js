@@ -13,25 +13,25 @@ handler.all = async function (m) {
 Hai, ${ucapan()}
 
 ${user.banned ? 'kamu dibanned' : 'Ada yang bisa saya bantu?'}
-`.trim(), '© stikerin', user.banned ? 'Pemilik Bot' : 'Menu', user.banned ? ',owner' : ',?', m)
+`.trim(), '© supuna', user.banned ? 'JOIN' : '.donasi', user.banned ? ',owner' : ',?', m)
     user.pc = new Date * 1
 }
 
 module.exports = handler
 function ucapan() {
-    const time = moment.tz('Asia/Jakarta').format('HH')
-    res = "Selamat dinihari"
+    const time = moment.tz('Asia/Colombo').format('HH')
+    res = "වෙල්කම්"
     if (time >= 4) {
-        res = "Selamat pagi"
+        res = "සුබ උදෑසනක්"
     }
     if (time > 10) {
-        res = "Selamat siang"
+        res = "සුබ දහවලක්"
     }
     if (time >= 15) {
-        res = "Selamat sore"
+        res = "සුබ සවසක් තේකක් බොමුතේ"
     }
     if (time >= 18) {
-        res = "Selamat malam"
+        res = "ගුඩ් නයිට් පරිස්සමින් ඉන්න"
     }
     return res
 }
