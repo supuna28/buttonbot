@@ -4,7 +4,7 @@ const { promisify } = require('util')
 const { join } = require('path')
 
 let confirmation = {}
-let repository = 'ariffb25/stikerinbot'
+let repository = 'supuna28/buttonbot'
 let branch = 'main'
 
 async function handler(m, { text }) {
