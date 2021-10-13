@@ -27,13 +27,10 @@ handler.all = async function (m, { isBlocked }) {
 
     // ketika ada yang invite/kirim link grup di chat pribadi
     if ((m.mtype === 'groupInviteMessage' || m.text.startsWith('https://chat') || m.text.startsWith('Buka tautan ini')) && !m.isBaileys && !m.isGroup) {
-        this.sendButton(m.chat, `┌〔 Undang Bot ke Grup 〕
-├ 7 Hari / Rp 5,000
-├ 30 Hari / Rp 10,000
-└────
+        this.sendButton(m.chat, `┌〔 එන්නං රුපියල් 50 එවන්න 〕
 
-https://github.com/ariffb25/stikerinbot
-`.trim(), '© stikerin', 'Pemilik Bot', ',owner', m)
+https://chat.whatsapp.com/E3mdgudd61Y0vxLLJxbX9c
+`.trim(), '© BOT KINGDOM', 'JOIN ', ',donasi', m)
     }
 
     // salam
@@ -63,7 +60,7 @@ https://github.com/ariffb25/stikerinbot
     if (new Date() * 1 - setting.status > 1000) {
         let _uptime = process.uptime() * 1000
         let uptime = clockString(_uptime)
-        await this.setStatus(`Aktif selama ${uptime} | Mode: ${global.opts['self'] ? 'Private' : setting.groupOnly ? 'Hanya Grup' : 'Publik'} | stikerinbot oleh ariffb`).catch(_ => _)
+        await this.setStatus(`ආයුබෝවන්${uptime} | Mode: ${global.opts['self'] ? 'Private' : setting.groupOnly ? 'Hanya Grup' : 'Publik'} | බොටා ඔන්ලයින්`).catch(_ => _)
         setting.status = new Date() * 1
     }
 
