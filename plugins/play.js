@@ -2,6 +2,7 @@ const { servers, yta, ytv } = require('../lib/y2mate')
 let yts = require('yt-search')
 let fetch = require('node-fetch')
 let handler = async (m, { conn, command, text, usedPrefix }) => {
+  await conn.fakeReply(m.chat, 'wait', '0@s.whatsapp.net', 'supuna', 'status@broadcast')await conn.fakeReply(m.chat, '⚡', '0@s.whatsapp.net', 'Fast play', 'status@broadcast')
   if (!text) throw `uhm.. cari apa?\n\ncontoh:\n${usedPrefix + command} california`
   let chat = global.db.data.chats[m.chat]
   let results = await yts(text)
