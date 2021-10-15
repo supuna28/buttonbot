@@ -2,7 +2,7 @@ let fetch = require('node-fetch')
 
 let handler = async (m, { conn }) => await conn.sendButtonLoc(m.chat, await (await fetch(fla + 'BOT KINGDOM')).buffer(), `
 
-┌〔 https://chat.whatsapp.com/GyF5zdb2aK15pAexpvHhNC〕
+┌〔https://chat.whatsapp.com/CLVbzE22JYKBS8QLCRcsX2 〕
 
 ├ ❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥
 
