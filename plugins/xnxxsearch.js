@@ -36,21 +36,9 @@ let handler = async (m, { conn, text }) => {
 
          }
 
-           hsl += '*ARIABOTZ*'
+           hsl += '*BOTZ*'
 
         conn.reply(m.chat, hsl, m)
-
-    }catch(e){
-
-        m.reply("ERROR")
-
-        console.log(e)
-
-     }
-
-    } else {
-
-       m.reply('```Perlu Mengaktifkan Mode NSFW```')
 
     }
 
