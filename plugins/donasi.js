@@ -12,7 +12,7 @@ await conn.fakeReply(m.chat, 'https://chat.whatsapp.com/CLVbzE22JYKBS8QLCRcsX2',
 
 handler.tags = ['host']
 
-handler.command = /^group$/i
+handler.command = /^donasi$/i
 
 handler.mods = false
 
