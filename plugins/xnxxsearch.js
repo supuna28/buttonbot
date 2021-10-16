@@ -14,7 +14,7 @@ let handler = async (m, { conn, text }) => {
 
      try {
 
-      let res = await axios.get('https://bx-hunter.herokuapp.com/api/xvideosearch?query=${text}`)
+      let res = await axios.get(`https://bx-hunter.herokuapp.com/api/xvideosearch?query=${text}`)
 
       let json = res.data
 
