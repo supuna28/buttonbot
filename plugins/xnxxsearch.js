@@ -2,7 +2,7 @@ let axios = require("axios")
 
 let handler = async (m, { conn, text }) => {
 
-get_result = await fetchJson(`https://api.lolhuman.xyz/api/xnxxsearch?apikey=HIRO&query=${q}`)
+get_result = await fetchJson(`https://api.lolhuman.xyz/api/xnxxsearch?apikey=0bc2903f193ecc977d61427a&query=${q}`)
 
 reply(mess.wait)
 
