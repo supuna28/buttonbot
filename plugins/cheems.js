@@ -8,7 +8,7 @@ let handler = async (m, { conn, args }) => {
 
   m.reply('*[ ❗ ] Wait,Proses...*')
 
-  let res = `https://api.memegen.link/images/doge?text1=${response[0]}&text2=${response[1]}
+  let res = `https://api.memegen.link/images/doge/text1/text2
 
   conn.sendFile(m.chat, res, 'doge.jpg', `🌚⚡`, m, false)
 
