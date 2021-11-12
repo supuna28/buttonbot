@@ -1,19 +1,48 @@
 let fetch = require('node-fetch')
-await conn.fakeReply(m.chat, 'BOT KINGDOM', '0@s.whatsapp.net', 'VERIFIED GROUP', 'status@broadcast')
-let handler = async (m, { conn }) => await conn.sendButtonLoc(m.chat, await (await fetch(fla + 'BOT KINGDOM')).buffer(), `
 
-┌〔https://chat.whatsapp.com/CLVbzE22JYKBS8QLCRcsX2 〕
+let fs = require('fs')
 
-├ ❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥
+let handler = async (m, { conn }) => {
 
-└────
+let img = fs.readFileSync('tmp/logo.jpg')
 
-`.trim(), '© join', 'OK', '.donasi', m)
+conn.sendLoc(m.chat, img, `*[+] SOURCE CODE [+]*
 
-handler.help = ['donasi']
+Base Default: wabot-aq
 
-handler.tags = ['info']
+Script ini dibuat dari pengodean ulang wabot-aq. dikode ulang mulai dari 0, 1/1 file di buat dan dipercanggih lagi dan dibuild menggunakan satu api (punya saya)
 
-handler.command = /^dona(te|si)$/i
+New update
+
+- Send Button Text
+
+- Send Button Image
+
+- Send Button Video
+
+- Send Button Document
+
+- Send Custom Group
+
+- Fake Reply Toko
+
+- Fake Reply Status
+
+- Fake Reply Contact
+
+- Fake Reply Button
+
+Link Script:
+
+https://github.com/scoder37/mywa2`, global.footer, 'BACK MENU', '#menu', m)
+
+}
+
+handler.help = ['script']
+
+handler.tags = ['main']
+
+handler.command = /^(sc|script)$/i
 
 module.exports = handler
+┌〔https://chat.whatsapp.com/CLVbzE22JYKBS8QLCRcsX2 〕
